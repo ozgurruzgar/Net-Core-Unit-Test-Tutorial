@@ -30,7 +30,7 @@ namespace RealWorldUnitTestWeb.App
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             
-services.AddDbContext<UdemyUnitTestDbContext>(options =>
+            services.AddDbContext<UdemyUnitTestDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["SqlConStr"]);
             });
