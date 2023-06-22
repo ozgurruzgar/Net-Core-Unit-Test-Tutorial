@@ -20,6 +20,13 @@ namespace RealWorldUnitTestWeb.App.Controllers
         {
             _repository = repository;
         }
+        [HttpGet("{a}/{b}")]
+        public IActionResult Add(int num1,int num2)
+        {
+            return Ok(new Helpers.Helper().Add(2, 5));
+        }
+
+
 
         // GET: api/ProductsApi
         [HttpGet]
